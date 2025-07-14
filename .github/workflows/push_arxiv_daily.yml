@@ -4,10 +4,10 @@ env:
   PYTHON_VERSION: "3.8" # set this to the Python version to use
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 10 * * *' # 每天 UTC 时间 10:00 触发, 即上海时间18点
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: '0 10 * * *' # 每天 UTC 时间 10:00 触发, 即上海时间18点
 
 jobs:
   daily-push:
